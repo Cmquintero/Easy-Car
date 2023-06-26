@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcas Asociadas</title>
+    <link rel="icon" href="https://www.carroya.com/noticias/sites/default/files/entradillas/473819833renaultlogo.jpeg">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: bisque;
+            font-size: medium;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        h1 {
+            color: aqua;
+        }
+        
+        footer {
+            padding: 20px;
+            background-color: lightgray;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .car-link {
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+        }
+        
+        .car-link img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .car-animation {
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Set the starting position to the left edge of the screen */
+    transform: translateX(-100%);
+    animation: animateCar 4s linear infinite; /* Increase the animation duration for a smoother transition */
+}
+
+@keyframes animateCar {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(1000%); /* Change the value to match the width of the screen */
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido!</h1>
+        <h2>A continuación le mostraremos nuestras marcas asociadas por medio de un logo de las mismas</h2>
+        <br>
+        <h3>Seleccione cualquiera de los iconos, esto lo llevará a la página de cada marca para que pueda leer más sobre ellas</h3>
+    </header>
+    
+    <div>
+        <a class="car-link" href="https://www.renault.com">
+            <img src="../img/rml.png" alt="Renault">
+        </a>
+        
+        <a class="car-link" href="https://www.toyota.com">
+            <img src="../img/passion_img01.jpg" alt="Toyota">
+        </a>
+        
+        <a class="car-link" href="https://www.volkswagen.com">
+            <img src="../img/vls.png" alt="Volkswagen">
+        </a>
+        
+        <a class="car-link" href="https://www.chevrolet.com">
+            <img src="../img/png-transparent-chevrolet-210-general-motors-car-logo-fiat-angle-emblem-rectangle.png" alt="Chevrolet">
+        </a>
+        
+        <a class="car-link" href="https://www.mazda.com">
+            <img src="../img/21c2fe7847dbc1b098500fbe58f5ecee.jpg" alt="Mazda">
+        </a>
+        
+        <a class="car-link" href="https://www.nissan.com">
+            <img src="../img/Nissan_logo.png" alt="Nissan">
+        </a>
+    </div>
+    
+    <footer>
+    </footer>
+
+    <img class="car-animation" src="../img/fot.jpg" alt="Car Animation">
+
+</body>
+</html>
